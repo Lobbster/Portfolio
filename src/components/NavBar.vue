@@ -24,7 +24,8 @@
               </v-tooltip>
 
               <v-tooltip bottom>
-                <template v-slot:activator="{ on, attrs }">
+                <template v-slot:activator="{ on, attrs }"
+                  >``
                   <v-btn
                     elevation="0"
                     class="mx-5 d-none d-md-flex"
@@ -68,7 +69,7 @@
 import { bus } from "@/main";
 export default {
   data: () => ({
-    email: "Thomashendrikz@Gmail.com"
+    email: "Thomashendrikz@Gmail.com",
   }),
   methods: {
     changeDrawer: function() {
@@ -79,7 +80,7 @@ export default {
     },
     scroll() {
       this.$vuetify.goTo(340);
-    }
-  }
+    },
+  },
 };
 </script>
