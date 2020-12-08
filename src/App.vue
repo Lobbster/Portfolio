@@ -27,7 +27,7 @@ export default {
     Drawer,
     Bio,
     Project,
-    Snackbar,
-  },
+    Snackbar
+  }
 };
 </script>

@@ -1,11 +1,11 @@
 <template>
-  <v-navigation-drawer v-model="drawer" app>
-    <v-list nav dense>
-      <v-list-item-group v-model="group">
+  <v-navigation-drawer v-model="drawer" temporary app>
+    <v-list>
+      <v-list-item-group>
         <!-- Start -->
-        <v-list-item>
+        <v-list-item @click="scroll()">
           <!-- Icon -->
-          <v-list-item-icon @click="scroll">
+          <v-list-item-icon>
             <v-icon>mdi-bomb</v-icon>
           </v-list-item-icon>
           <!-- Name -->
@@ -14,14 +14,15 @@
           </v-list-item-content>
         </v-list-item>
         <!-- End -->
+
         <!-- Start -->
         <v-list-item
           href="https://www.linkedin.com/in/tom-hendrikz/"
           target="_blank"
         >
           <!-- Icon -->
-          <v-list-item-icon @click="$vuetify.goTo(target, options)">
-            <v-icon>mdi-linkedin </v-icon>
+          <v-list-item-icon>
+            <v-icon>mdi-linkedin</v-icon>
           </v-list-item-icon>
           <!-- Name -->
           <v-list-item-content>
@@ -53,26 +54,21 @@ export default {
   data: () => ({
     email: "Thomashendrikz@Gmail.com",
     drawer: false,
-    group: null,
+    group: null
   }),
   methods: {
-    copiedEmail: function () {
+    copiedEmail: function() {
       bus.$emit("copiedEmail", true);
     },
     scroll() {
-      console.log("try to scroll");
-      this.$vuetify.goTo(999);
-    },
+      this.drawer = !this.drawer;
+      this.$vuetify.goTo(500);
+    }
   },
   mounted() {
-    bus.$on("changeDrawer", (data) => {
+    bus.$on("changeDrawer", data => {
       this.drawer = data;
     });
-  },
-  watch: {
-    group() {
-      this.drawer = false;
-    },
-  },
+  }
 };
 </script>

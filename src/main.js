@@ -2,7 +2,7 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 import vuetify from "./plugins/vuetify";
-import VueClipboard from 'vue-clipboard2';
+import VueClipboard from "vue-clipboard2";
 
 export const bus = new Vue();
 

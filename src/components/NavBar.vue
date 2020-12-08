@@ -9,16 +9,35 @@
               <h5>UX/UI Designer</h5>
             </div>
             <div class="d-flex align-center">
-              <v-btn @click="toTop" elevation="0" class="d-none d-md-flex"
-                >Work</v-btn
-              >
-              <v-btn
-                elevation="0"
-                class="mx-5 d-none d-md-flex"
-                href="https://www.linkedin.com/in/tom-hendrikz/"
-                target="_blank"
-                >LinkedIn</v-btn
-              >
+              <v-tooltip bottom>
+                <template v-slot:activator="{ on, attrs }">
+                  <v-btn
+                    @click="scroll()"
+                    elevation="0"
+                    v-bind="attrs"
+                    v-on="on"
+                    class="d-none d-md-flex"
+                    >Work</v-btn
+                  >
+                </template>
+                <span>My Projects</span>
+              </v-tooltip>
+
+              <v-tooltip bottom>
+                <template v-slot:activator="{ on, attrs }">
+                  <v-btn
+                    elevation="0"
+                    class="mx-5 d-none d-md-flex"
+                    v-bind="attrs"
+                    v-on="on"
+                    href="https://www.linkedin.com/in/tom-hendrikz/"
+                    target="_blank"
+                    >LinkedIn</v-btn
+                  >
+                </template>
+                <span>Go to LinkedIn</span>
+              </v-tooltip>
+
               <v-tooltip bottom>
                 <template v-slot:activator="{ on, attrs }">
                   <v-btn
@@ -31,7 +50,7 @@
                     >Thomashendrikz@Gmail.com</v-btn
                   >
                 </template>
-                <span>Copy</span>
+                <span>Copy Email</span>
               </v-tooltip>
               <v-app-bar-nav-icon
                 class="d-md-none"
@@ -49,18 +68,18 @@
 import { bus } from "@/main";
 export default {
   data: () => ({
-    email: "Thomashendrikz@Gmail.com",
+    email: "Thomashendrikz@Gmail.com"
   }),
   methods: {
-    changeDrawer: function () {
+    changeDrawer: function() {
       bus.$emit("changeDrawer", !this.drawer);
     },
-    copiedEmail: function () {
+    copiedEmail: function() {
       bus.$emit("copiedEmail", true);
     },
-    toTop() {
-      this.$vuetify.goTo(200);
-    },
-  },
+    scroll() {
+      this.$vuetify.goTo(340);
+    }
+  }
 };
 </script>

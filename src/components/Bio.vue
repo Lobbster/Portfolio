@@ -14,18 +14,11 @@
           <v-col class="pa-3">
             <h1>Hi, im Tom</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Vestibulum fermentum metus eget lacus lobortis porta. Proin porta
-              risus elit, sit amet hendrerit dui tristique convallis. Maecenas
-              ac fermentum nunc. Fusce mi dolor, volutpat id lectus nec,
-              ullamcorper varius enim.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Vestibulum fermentum metus eget lacus lobortis porta. Proin porta
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur
+              I’m a Junior UX & UI designer, my speciality is to improve that
+              quality and usability of digital products based on clients needs.
+              I'm currently a UX designer at Onside, assisting in implementing
+              new features into their app as the company expands into the
+              Australian market.
             </p>
           </v-col>
         </v-row>
