@@ -68,7 +68,7 @@
 import { bus } from "@/main";
 export default {
   data: () => ({
-    email: "Thomashendrikz@Gmail.com",
+    email: "Thomashendrikz@Gmail.com"
   }),
   methods: {
     changeDrawer: function() {
@@ -79,7 +79,7 @@ export default {
     },
     scroll() {
       this.$vuetify.goTo(340);
-    },
-  },
+    }
+  }
 };
 </script>
