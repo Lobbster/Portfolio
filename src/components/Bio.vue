@@ -17,7 +17,7 @@
               I’m a Junior UX & UI designer, my speciality is to improve that
               quality and usability of digital products based on clients needs.
               I'm currently a UX designer at Onside, assisting in implementing
-              new features into their app as the company expands into the
+              new features into their app, as the company expands into the
               Australian market.
             </p>
           </v-col>

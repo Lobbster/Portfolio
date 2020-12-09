@@ -24,8 +24,7 @@
               </v-tooltip>
 
               <v-tooltip bottom>
-                <template v-slot:activator="{ on, attrs }"
-                  >``
+                <template v-slot:activator="{ on, attrs }">
                   <v-btn
                     elevation="0"
                     class="mx-5 d-none d-md-flex"
