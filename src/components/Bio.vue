@@ -9,7 +9,9 @@
             md="3"
             class="d-flex justify-center align-center"
           >
-            <v-avatar class="profile" color="blue" size="200"></v-avatar>
+            <v-avatar class="profile" color="blue" size="200">
+              <v-img src="../assets/image/tom.png" alt="Tom" />
+            </v-avatar>
           </v-col>
           <v-col class="pa-3">
             <h1>Hi, im Tom</h1>
